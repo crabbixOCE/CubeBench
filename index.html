@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CubeBench</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <section class="panel controls-panel">
+        <div class="eyebrow">CubeBench</div>
+        <h1>Move file player</h1>
+        <p class="lede">
+          Load a text file containing cube notation and replay it in the browser.
+        </p>
+
+        <div class="control-group">
+          <label class="field-label" for="moves-file">Moves file</label>
+          <input id="moves-file" type="file" accept=".txt,.alg,text/plain" />
+        </div>
+
+        <div class="button-row">
+          <button id="load-sample" type="button">Load sample</button>
+          <button id="apply-editor" type="button">Apply editor text</button>
+        </div>
+
+        <div class="control-group">
+          <label class="field-label" for="moves-editor">Moves</label>
+          <textarea
+            id="moves-editor"
+            spellcheck="false"
+            placeholder="R U R' U'"
+          ></textarea>
+        </div>
+
+        <dl class="stats" id="stats">
+          <div>
+            <dt>Expanded moves</dt>
+            <dd id="move-count">0</dd>
+          </div>
+          <div>
+            <dt>Cube status</dt>
+            <dd id="cube-status">No algorithm loaded</dd>
+          </div>
+          <div>
+            <dt>Source</dt>
+            <dd id="source-label">None</dd>
+          </div>
+        </dl>
+
+        <p class="message" id="message" aria-live="polite"></p>
+      </section>
+
+      <section class="panel viewer-panel">
+        <div class="viewer-header">
+          <div>
+            <div class="eyebrow">Viewer</div>
+            <h2>cubing.js player</h2>
+          </div>
+          <button id="reset-view" type="button">Jump to start</button>
+        </div>
+
+        <div id="player-mount" class="player-mount"></div>
+
+        <div class="state-card">
+          <div class="eyebrow">cubejs state</div>
+          <pre id="cube-state">Solved cube</pre>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

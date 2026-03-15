@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CubeBench Replay</title>
+    <script type="module" src="/src/replay.js"></script>
+  </head>
+  <body>
+    <main class="replay-shell">
+      <header class="replay-header">
+        <div class="replay-kicker" id="replay-kicker">CubeBench Replay</div>
+        <h1 class="replay-title" id="replay-title">Preparing replay</h1>
+        <p class="replay-subtitle" id="replay-subtitle"></p>
+      </header>
+
+      <section class="replay-stage">
+        <div class="player-frame">
+          <div id="replay-player"></div>
+        </div>
+      </section>
+
+      <footer class="replay-footer">
+        <div class="replay-run" id="replay-run"></div>
+        <div class="replay-progress" id="replay-progress"></div>
+      </footer>
+    </main>
+  </body>
+</html>

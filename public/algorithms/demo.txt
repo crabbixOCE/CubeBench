@@ -1,0 +1,5 @@
+# Lines beginning with # are not special to cubing.js, but plain notation works
+# well across multiple lines.
+R U R' U'
+[R, U]
+(F R U R' U' F')2
