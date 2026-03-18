@@ -1,22 +1,27 @@
-provider: openai # google | openai | anthropic
-model_name: gpt-5.4
 cube: 3x3
 representation: cubie_json
-scramble_name: White cross
-scramble: "B' F' R2 D2 B' D2 L2 F U2 F R2 U L' D' F' U R' D B' D2 R2"
-task: f2l # white_cross | f2l | full_solve
+tasks:
+  - cross
+  - one_face
+  - one_layer
+  - f2l
+  # - full_solve
+model_names:
+  # - gpt-5.4-low
+  - gpt-5.4-xhigh
+  # - gpt-5.4-high
+  # - gemini-3.1-pro-preview-high
+n_runs_per_task: 2
 max_turns: 50
 max_output_tokens: 100000
 
 openai:
-  reasoning_effort: high
   reasoning_summary: detailed
 
 anthropic:
-  max_tokens: 1600
-  thinking_budget_tokens: 2048
+  max_tokens: 100000
+  thinking_budget_tokens: 16384
 
 google:
   max_output_tokens: 100000
-  thinking_level: high
   include_thoughts: true

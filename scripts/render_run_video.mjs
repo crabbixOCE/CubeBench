@@ -1,7 +1,7 @@
 import { spawn } from "node:child_process";
 import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import { basename, dirname, join, resolve } from "node:path";
 import process from "node:process";
 
 import { Alg, Move } from "cubing/alg";
@@ -11,6 +11,10 @@ const DEFAULT_FPS = 30;
 const DEFAULT_WIDTH = 1280;
 const DEFAULT_HEIGHT = 720;
 const DEFAULT_PORT = 4173;
+
+function logStatus(message) {
+  process.stdout.write(`${message}\n`);
+}
 
 function parseArgs(argv) {
   const options = {
@@ -65,11 +69,21 @@ function parseArgs(argv) {
   }
 
   if (!options.tracePath) {
-    options.tracePath = options.eventsPath.replace(/_events\.txt$/, "_reasoning.txt");
+    if (options.eventsPath.endsWith("/events.txt")) {
+      options.tracePath = join(dirname(options.eventsPath), "reasoning.txt");
+    } else {
+      options.tracePath = options.eventsPath.replace(/_events\.txt$/, "_reasoning.txt");
+    }
   }
 
   if (!options.outputPath) {
-    options.outputPath = options.eventsPath.replace(/_events\.txt$/, ".mp4");
+    if (options.eventsPath.endsWith("/events.txt")) {
+      const runDir = dirname(options.eventsPath);
+      const runId = basename(runDir);
+      options.outputPath = join(dirname(runDir), `${runId}.mp4`);
+    } else {
+      options.outputPath = options.eventsPath.replace(/_events\.txt$/, ".mp4");
+    }
   }
 
   return options;
@@ -134,7 +148,7 @@ function parseCompactEvents(text) {
 
   for (const line of lines) {
     const toolMatch = line.match(
-      /^(load_scramble|get_state|apply_moves|check_task_complete)\s+(\{.*\})$/,
+      /^(load_scramble|get_state|apply_moves|check_task_complete|make_final_submission)\s+(\{.*\})$/,
     );
     if (!toolMatch) {
       bufferedOutput.push(line);
@@ -186,10 +200,12 @@ function buildFrames({ compactEvents, config, scrambleName, fps }) {
     subtitle,
     moves,
     reset = false,
+    resetToMoves = [],
     endHoldSeconds = 2,
   }) => {
     if (reset) {
       currentMoves.length = 0;
+      currentMoves.push(...resetToMoves);
     }
 
     pushHold({ title, subtitle, seconds: 0.45 });
@@ -258,6 +274,20 @@ function buildFrames({ compactEvents, config, scrambleName, fps }) {
         title: `Tool call ${eventCounter}: check_task_complete ${task}`.trim(),
         subtitle: `Validate benchmark task completion: ${task}`,
         seconds: 0.85,
+      });
+      continue;
+    }
+
+    if (event.type === "tool_call" && event.name === "make_final_submission") {
+      const moveText = event.arguments.moves ?? "";
+      const moves = expandMoves(moveText);
+      pushMoveSequence({
+        title: `Final submission: ${moveText}`.trim(),
+        subtitle: "Render the model's final scored move sequence",
+        moves,
+        reset: true,
+        resetToMoves: scrambleMoves,
+        endHoldSeconds: 2.5,
       });
       continue;
     }
@@ -380,12 +410,16 @@ async function main() {
   });
 
   const frameDir = await mkdtemp(join(tmpdir(), "cubebench-video-"));
+  logStatus(`Loaded ${compactEvents.length} events and built ${frames.length} frames.`);
+  logStatus("Building frontend bundle...");
   await runCommand("npm", ["run", "build"]);
+  logStatus(`Starting preview server on http://127.0.0.1:${options.port}/replay.html ...`);
   const server = spawnPreviewServer(options.port);
   let browser;
 
   try {
     await waitForServer(`http://127.0.0.1:${options.port}/replay.html`);
+    logStatus("Preview server is ready.");
 
     browser = await chromium.launch();
     const page = await browser.newPage({
@@ -402,13 +436,20 @@ async function main() {
       runLabel: `${config.provider} ${config.model_name}`,
     });
 
+    logStatus(`Capturing ${frames.length} frames...`);
     for (let index = 0; index < frames.length; index += 1) {
       await page.evaluate((frame) => window.cubebenchReplay.render(frame), frames[index]);
       await page.screenshot({
         path: join(frameDir, `frame-${String(index).padStart(6, "0")}.png`),
       });
+
+      const frameNumber = index + 1;
+      if (frameNumber % 100 === 0 || frameNumber === frames.length) {
+        logStatus(`Captured ${frameNumber}/${frames.length} frames`);
+      }
     }
 
+    logStatus("Encoding MP4 with ffmpeg...");
     await runFfmpeg({
       fps: options.fps,
       frameDir,

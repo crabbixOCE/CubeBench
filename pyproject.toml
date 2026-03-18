@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
   "anthropic>=0.72.0",
   "google-genai>=1.42.0",
+  "matplotlib>=3.10.0",
   "openai>=2.0.0",
   "python-dotenv>=1.1.1",
   "pyyaml>=6.0.2",
@@ -14,6 +15,7 @@ dependencies = [
 
 [project.scripts]
 cubebench-harness = "cubebench_harness.cli:main"
+cubebench-plot-results = "cubebench_harness.plot_results:main"
 
 [build-system]
 requires = ["hatchling"]

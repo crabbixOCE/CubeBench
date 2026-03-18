@@ -33,18 +33,14 @@ class CubeJsBridge:
         self._state = result.facelet_string
         return result
 
+    def generate_scramble(self) -> str:
+        data = self._run({"cube": self.cube, "generate_scramble": True})
+        return str(data["scramble"])
+
     def apply_moves(self, moves: str) -> CubeBridgeResult:
         result = self._invoke(state=self._state, moves=moves)
         self._state = result.facelet_string
         return result
-
-    def get_state(self) -> CubeBridgeResult:
-        result = self._invoke(state=self._state, moves=None)
-        self._state = result.facelet_string
-        return result
-
-    def is_solved(self) -> bool:
-        return self.get_state().is_solved
 
     def check_task_complete(self, task: str) -> TaskCheckResult:
         data = self._run(
