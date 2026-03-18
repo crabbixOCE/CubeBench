@@ -38,18 +38,26 @@ Tiny samples because I can't afford to run this at scale. I only test a model ag
 | f2l        |      N/A    |             N/A              |            
 | full_solve |      N/A    |             N/A              |            
 
+<img width="1800" height="1080" alt="reasoning_effort_vs_move_count" src="https://github.com/user-attachments/assets/62bb9271-2bd6-4656-9d3d-41fe32db1380" />
 
 GPT-5.4 achieves an average movecount of 5.4, narrowly beating gemini-3.1-pro's 6.2, but note low sample size. 
 
-Gemini-3.1-pro-preview successively refining a cross solution from 5 moves (green cross) down to 3 moves (orange cross). 
-Scramble: 
+## Animations
 
+https://github.com/user-attachments/assets/78ee4a66-3690-40d3-8ec3-95fec56e904e
+
+Gemini-3.1-pro-preview successively refining a cross solution from 5 moves (green cross) down to 3 moves (orange cross). 
+Scramble: D L' B U2 R' F2 U' F2 R2 F R2 B R2 B' U2 D2 B' D2 F2 L B'
+
+
+https://github.com/user-attachments/assets/bfb71518-9b01-4410-b2ad-154aab9852e5
 
 Gpt-5.4 solving the white face. Corner insertions are highly inefficient, using a beginner's technique. 
+Scramble: U' R B' U2 D2 F' R' B' U R' L2 D' R2 F2 D2 R2 F2 U' F2 D2 B2
 
 
 
-Areas For Future Work
+## Areas For Future Work
 
 - Run many more repetitions per task/model. The current batches are too small  
 to give stable completion rates or move-count distributions.
