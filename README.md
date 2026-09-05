@@ -33,7 +33,8 @@ Codex environment and submitted a **verified 61-move solution**, using **24,146
 reasoning tokens**. The run had a budget of 100,000 reported reasoning tokens
 and a one-hour backstop; it finished before either limit.
 
-[Watch the Astra full-solve video (MP4, 51 seconds)](media/astra-no-code-fresh-full-solve.mp4)
+https://github.com/user-attachments/assets/8b2b7226-f90b-4113-8ae6-2d07c4783425
+
 
 The replay shows the actual attempt followed by the submitted solution. Astra
 applied 62 moves while solving, then combined two adjacent turns to submit 61.
