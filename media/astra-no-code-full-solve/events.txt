@@ -1,0 +1,6 @@
+load_scramble {}
+apply_moves {"moves": "D F' R U B' R D2"}
+apply_moves {"moves": "U R U R' L' U L"}
+apply_moves {"moves": "U B U B' F' U F"}
+apply_moves {"moves": "L U' L' B' U2 B"}
+apply_moves {"moves": "B U' B' R' U2 R"}

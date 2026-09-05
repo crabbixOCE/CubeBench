@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(process.cwd(), "index.html"),
         replay: resolve(process.cwd(), "replay.html"),
+        comparison: resolve(process.cwd(), "comparison.html"),
       },
     },
   },

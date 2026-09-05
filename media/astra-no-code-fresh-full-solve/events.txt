@@ -1,0 +1,10 @@
+load_scramble {}
+apply_moves {"moves": "F' R' D' R' U2 L2 F2 U' R2"}
+apply_moves {"moves": "R U R' U R U R'"}
+apply_moves {"moves": "B' U' B U' R' U R"}
+apply_moves {"moves": "F U L U' L' F2 U F L' U' L2 U L'"}
+apply_moves {"moves": "F' U' F"}
+apply_moves {"moves": "B L U L' U' B' F' L F R' F' L' F R"}
+apply_moves {"moves": "F2 U' L R' F2 L' R U' F2"}
+check_task_complete {"task": "full_solve"}
+make_final_submission {"moves": "F' R' D' R' U2 L2 F2 U' R' U R' U R U R' B' U' B U' R' U R F U L U' L' F2 U F L' U' L2 U L' F' U' F B L U L' U' B' F' L F R' F' L' F R F2 U' L R' F2 L' R U' F2"}

@@ -1,4 +1,6 @@
 import Cube from "cubejs";
+import { Alg, LineComment, Move, Newline, Pause } from "cubing/alg";
+import { cube3x3x3 } from "cubing/puzzles";
 import { randomScrambleForEvent } from "cubing/scramble";
 
 const ORIENTATION_TURNS = ["x", "y", "z"];
@@ -131,6 +133,118 @@ function loadCube(payload) {
   return new Cube();
 }
 
+const CUBEJS_MOVE_FAMILIES = new Set([
+  "U",
+  "R",
+  "F",
+  "D",
+  "L",
+  "B",
+  "E",
+  "M",
+  "S",
+  "x",
+  "y",
+  "z",
+  "u",
+  "r",
+  "f",
+  "d",
+  "l",
+  "b",
+]);
+
+const CUBEJS_WIDE_FAMILIES = {
+  Uw: "u",
+  Rw: "r",
+  Fw: "f",
+  Dw: "d",
+  Lw: "l",
+  Bw: "b",
+};
+
+const CUBING_MOVE_FAMILIES = new Set([
+  ...CUBEJS_MOVE_FAMILIES,
+  ...Object.keys(CUBEJS_WIDE_FAMILIES),
+]);
+
+function normalizeAtomicMove(move) {
+  const family = CUBEJS_WIDE_FAMILIES[move.family] ?? move.family;
+  if (!CUBEJS_MOVE_FAMILIES.has(family)) {
+    throw new Error(`Unsupported 3x3 move family '${move.family}'.`);
+  }
+
+  if (move.outerLayer !== undefined || move.innerLayer !== undefined) {
+    throw new Error(`Unsupported 3x3 layer range '${move.toString()}'.`);
+  }
+
+  const amount = ((move.amount % 4) + 4) % 4;
+  if (amount === 0) {
+    return null;
+  }
+  if (amount === 1) {
+    return family;
+  }
+  if (amount === 2) {
+    return `${family}2`;
+  }
+  return `${family}'`;
+}
+
+function normalizeMoves(rawMoves) {
+  if (typeof rawMoves !== "string") {
+    throw new Error("Moves must be a string containing legal 3x3 notation.");
+  }
+
+  // Alg.fromString intentionally treats only spaces/newlines as separators;
+  // normalize common transport whitespace before handing it the notation.
+  const trimmedMoves = rawMoves.replace(/[\t\r]/g, " ").trim();
+  if (!trimmedMoves) {
+    return "";
+  }
+
+  let alg;
+  try {
+    alg = Alg.fromString(trimmedMoves);
+  } catch (error) {
+    throw new Error(`Invalid 3x3 move notation: ${error.message}`);
+  }
+
+  for (const unit of alg.expand().units()) {
+    if (unit instanceof Move && !CUBING_MOVE_FAMILIES.has(unit.family)) {
+      throw new Error(
+        `Invalid 3x3 move notation '${unit.toString()}': unsupported move family '${unit.family}'.`,
+      );
+    }
+  }
+
+  let simplified;
+  try {
+    simplified = alg.experimentalSimplify({ cancel: true, puzzleLoader: cube3x3x3 });
+  } catch (error) {
+    throw new Error(`Invalid 3x3 move notation '${trimmedMoves}': ${error.message}`);
+  }
+
+  const normalizedMoves = [];
+  for (const unit of simplified.expand().units()) {
+    if (unit instanceof Move) {
+      const normalizedMove = normalizeAtomicMove(unit);
+      if (normalizedMove !== null) {
+        normalizedMoves.push(normalizedMove);
+      }
+    } else if (unit instanceof LineComment || unit instanceof Newline) {
+      // Comments and line breaks are valid Alg syntax but do not affect a cube.
+      continue;
+    } else if (unit instanceof Pause) {
+      throw new Error(`Unsupported 3x3 algorithm unit '${unit.toString()}'.`);
+    } else {
+      throw new Error(`Unsupported 3x3 algorithm unit '${unit.toString()}'.`);
+    }
+  }
+
+  return normalizedMoves.join(" ");
+}
+
 async function generateScramble(payload) {
   if (payload.cube !== "3x3") {
     throw new Error(`Unsupported cube: ${payload.cube}`);
@@ -166,6 +280,10 @@ function alignToCanonicalOrientation(cube) {
 }
 
 function checkTaskComplete(cube, task) {
+  if (task === "white_cross") {
+    return cube.center[0] === 0 && areEdgeSlotsSolved(cube, [0, 1, 2, 3]);
+  }
+
   const aligned = alignToCanonicalOrientation(cube);
 
   switch (task) {
@@ -203,8 +321,11 @@ async function main() {
 
   const cube = loadCube(payload);
 
-  if (payload.moves) {
-    cube.move(payload.moves);
+  if (payload.moves !== undefined && payload.moves !== null) {
+    const normalizedMoves = normalizeMoves(payload.moves);
+    if (normalizedMoves) {
+      cube.move(normalizedMoves);
+    }
   }
 
   const result = {

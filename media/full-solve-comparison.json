@@ -1,0 +1,2052 @@
+{
+  "scramble": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+  "metric": "Cumulative completed cube-tool calls versus verified solution moves (HTM). Token/cost histories unavailable. Synchronized move playback, not wall-clock time. Stops at last verified solve; duplicate final submissions are not replayed.",
+  "runs": [
+    {
+      "label": "GPT-5.5",
+      "effort": "xhigh",
+      "color": "#67c5ff",
+      "path": "runs/20260905T055253Z_codex_gpt55_full_solve/001_full_solve_gpt_5_5_xhigh",
+      "pending": false,
+      "steps": [
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 1,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "D",
+          "count": 1,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D",
+          "move": "D2",
+          "count": 2,
+          "calls": 3,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2",
+          "move": "U'",
+          "count": 3,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U'",
+          "move": "F2",
+          "count": 4,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2",
+          "move": "F2",
+          "count": 5,
+          "calls": 5,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2",
+          "move": "U",
+          "count": 6,
+          "calls": 5,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U",
+          "move": "U",
+          "count": 7,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U",
+          "move": "F2",
+          "count": 8,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2",
+          "move": "F2",
+          "count": 9,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2",
+          "move": "U'",
+          "count": 10,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U'",
+          "move": "R'",
+          "count": 11,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R'",
+          "move": "F",
+          "count": 12,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F",
+          "move": "R",
+          "count": 13,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R",
+          "move": "L",
+          "count": 14,
+          "calls": 9,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L",
+          "move": "F'",
+          "count": 15,
+          "calls": 9,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F'",
+          "move": "L'",
+          "count": 16,
+          "calls": 9,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L'",
+          "move": "L",
+          "count": 17,
+          "calls": 10,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L",
+          "move": "F",
+          "count": 18,
+          "calls": 10,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F",
+          "move": "L'",
+          "count": 19,
+          "calls": 10,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L'",
+          "move": "F'",
+          "count": 20,
+          "calls": 11,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F'",
+          "move": "L",
+          "count": 21,
+          "calls": 11,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L",
+          "move": "F",
+          "count": 22,
+          "calls": 11,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F",
+          "move": "F'",
+          "count": 23,
+          "calls": 12,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F'",
+          "move": "L'",
+          "count": 24,
+          "calls": 12,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L'",
+          "move": "F",
+          "count": 25,
+          "calls": 12,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F",
+          "move": "L'",
+          "count": 26,
+          "calls": 13,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L'",
+          "move": "B",
+          "count": 27,
+          "calls": 13,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B",
+          "move": "L",
+          "count": 28,
+          "calls": 13,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L",
+          "move": "L'",
+          "count": 29,
+          "calls": 14,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L'",
+          "move": "B'",
+          "count": 30,
+          "calls": 14,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B'",
+          "move": "L",
+          "count": 31,
+          "calls": 14,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L",
+          "move": "L",
+          "count": 32,
+          "calls": 15,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L",
+          "move": "B'",
+          "count": 33,
+          "calls": 15,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B'",
+          "move": "L'",
+          "count": 34,
+          "calls": 15,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L'",
+          "move": "L",
+          "count": 35,
+          "calls": 16,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L",
+          "move": "B",
+          "count": 36,
+          "calls": 16,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B",
+          "move": "L'",
+          "count": 37,
+          "calls": 16,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L'",
+          "move": "U2",
+          "count": 38,
+          "calls": 17,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2",
+          "move": "B2",
+          "count": 39,
+          "calls": 17,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2",
+          "move": "U2",
+          "count": 40,
+          "calls": 18,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2",
+          "move": "L'",
+          "count": 41,
+          "calls": 18,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L'",
+          "move": "B",
+          "count": 42,
+          "calls": 18,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B",
+          "move": "L",
+          "count": 43,
+          "calls": 18,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L",
+          "move": "D",
+          "count": 44,
+          "calls": 18,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D",
+          "move": "D'",
+          "count": 45,
+          "calls": 19,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D'",
+          "move": "L'",
+          "count": 46,
+          "calls": 19,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L'",
+          "move": "B'",
+          "count": 47,
+          "calls": 19,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B'",
+          "move": "L",
+          "count": 48,
+          "calls": 19,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L",
+          "move": "U2",
+          "count": 49,
+          "calls": 19,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2",
+          "move": "U2",
+          "count": 50,
+          "calls": 20,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2",
+          "move": "B",
+          "count": 51,
+          "calls": 20,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B",
+          "move": "L",
+          "count": 52,
+          "calls": 20,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L",
+          "move": "B'",
+          "count": 53,
+          "calls": 20,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B'",
+          "move": "B",
+          "count": 54,
+          "calls": 21,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B",
+          "move": "L'",
+          "count": 55,
+          "calls": 21,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L'",
+          "move": "B'",
+          "count": 56,
+          "calls": 21,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B'",
+          "move": "U2",
+          "count": 57,
+          "calls": 21,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2",
+          "move": "U2",
+          "count": 58,
+          "calls": 22,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2",
+          "move": "L'",
+          "count": 59,
+          "calls": 22,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L'",
+          "move": "B",
+          "count": 60,
+          "calls": 22,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B",
+          "move": "L",
+          "count": 61,
+          "calls": 22,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L",
+          "move": "L'",
+          "count": 62,
+          "calls": 23,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L'",
+          "move": "B'",
+          "count": 63,
+          "calls": 23,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B'",
+          "move": "L",
+          "count": 64,
+          "calls": 23,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L",
+          "move": "U2",
+          "count": 65,
+          "calls": 23,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2",
+          "move": "U2",
+          "count": 66,
+          "calls": 24,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2",
+          "move": "B'",
+          "count": 67,
+          "calls": 24,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B'",
+          "move": "L",
+          "count": 68,
+          "calls": 24,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L",
+          "move": "B",
+          "count": 69,
+          "calls": 24,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B",
+          "move": "B'",
+          "count": 70,
+          "calls": 25,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B'",
+          "move": "L'",
+          "count": 71,
+          "calls": 25,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L'",
+          "move": "B",
+          "count": 72,
+          "calls": 25,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B",
+          "move": "U2",
+          "count": 73,
+          "calls": 25,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2",
+          "move": "U2",
+          "count": 74,
+          "calls": 26,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2",
+          "move": "B",
+          "count": 75,
+          "calls": 26,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B",
+          "move": "L'",
+          "count": 76,
+          "calls": 26,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L'",
+          "move": "B'",
+          "count": 77,
+          "calls": 26,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B'",
+          "move": "B",
+          "count": 78,
+          "calls": 27,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B",
+          "move": "L",
+          "count": 79,
+          "calls": 27,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L",
+          "move": "B'",
+          "count": 80,
+          "calls": 27,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B'",
+          "move": "U2",
+          "count": 81,
+          "calls": 27,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2",
+          "move": "U2",
+          "count": 82,
+          "calls": 28,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2",
+          "move": "B'",
+          "count": 83,
+          "calls": 28,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B'",
+          "move": "L'",
+          "count": 84,
+          "calls": 28,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L'",
+          "move": "B",
+          "count": 85,
+          "calls": 28,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B",
+          "move": "B'",
+          "count": 86,
+          "calls": 29,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B'",
+          "move": "L",
+          "count": 87,
+          "calls": 29,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L",
+          "move": "B",
+          "count": 88,
+          "calls": 29,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B",
+          "move": "U2",
+          "count": 89,
+          "calls": 29,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2",
+          "move": "F",
+          "count": 90,
+          "calls": 30,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F",
+          "move": "F'",
+          "count": 91,
+          "calls": 31,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F'",
+          "move": "L",
+          "count": 92,
+          "calls": 32,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L",
+          "move": "L'",
+          "count": 93,
+          "calls": 33,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L'",
+          "move": "B",
+          "count": 94,
+          "calls": 34,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B",
+          "move": "B'",
+          "count": 95,
+          "calls": 35,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B'",
+          "move": "U2",
+          "count": 96,
+          "calls": 36,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2",
+          "move": "L",
+          "count": 97,
+          "calls": 36,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L",
+          "move": "F",
+          "count": 98,
+          "calls": 36,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F",
+          "move": "U",
+          "count": 99,
+          "calls": 36,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U",
+          "move": "L2",
+          "count": 100,
+          "calls": 36,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2",
+          "move": "L",
+          "count": 101,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L",
+          "move": "U2",
+          "count": 102,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2",
+          "move": "R'",
+          "count": 103,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R'",
+          "move": "F",
+          "count": 104,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F",
+          "move": "R",
+          "count": 105,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R",
+          "move": "U2",
+          "count": 106,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2",
+          "move": "L'",
+          "count": 107,
+          "calls": 37,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L'",
+          "move": "L",
+          "count": 108,
+          "calls": 38,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L",
+          "move": "U",
+          "count": 109,
+          "calls": 38,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U",
+          "move": "L'",
+          "count": 110,
+          "calls": 38,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L'",
+          "move": "U'",
+          "count": 111,
+          "calls": 38,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U'",
+          "move": "U2",
+          "count": 112,
+          "calls": 39,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2",
+          "move": "R",
+          "count": 113,
+          "calls": 40,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R",
+          "move": "U",
+          "count": 114,
+          "calls": 40,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U",
+          "move": "R'",
+          "count": 115,
+          "calls": 40,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R'",
+          "move": "U'",
+          "count": 116,
+          "calls": 40,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U'",
+          "move": "R",
+          "count": 117,
+          "calls": 41,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R",
+          "move": "U",
+          "count": 118,
+          "calls": 41,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U",
+          "move": "R'",
+          "count": 119,
+          "calls": 41,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R'",
+          "move": "U'",
+          "count": 120,
+          "calls": 41,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U'",
+          "move": "R",
+          "count": 121,
+          "calls": 42,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R",
+          "move": "U",
+          "count": 122,
+          "calls": 42,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U",
+          "move": "R'",
+          "count": 123,
+          "calls": 42,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R'",
+          "move": "U'",
+          "count": 124,
+          "calls": 42,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U'",
+          "move": "U",
+          "count": 125,
+          "calls": 43,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U",
+          "move": "L'",
+          "count": 126,
+          "calls": 44,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L'",
+          "move": "U'",
+          "count": 127,
+          "calls": 44,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U'",
+          "move": "L",
+          "count": 128,
+          "calls": 44,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L",
+          "move": "U",
+          "count": 129,
+          "calls": 44,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U",
+          "move": "L'",
+          "count": 130,
+          "calls": 45,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L'",
+          "move": "U'",
+          "count": 131,
+          "calls": 45,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U'",
+          "move": "L",
+          "count": 132,
+          "calls": 45,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L",
+          "move": "U",
+          "count": 133,
+          "calls": 45,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U",
+          "move": "L'",
+          "count": 134,
+          "calls": 46,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L'",
+          "move": "U'",
+          "count": 135,
+          "calls": 46,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U'",
+          "move": "L",
+          "count": 136,
+          "calls": 46,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L",
+          "move": "U",
+          "count": 137,
+          "calls": 46,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U",
+          "move": "L",
+          "count": 138,
+          "calls": 47,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L",
+          "move": "U",
+          "count": 139,
+          "calls": 47,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U",
+          "move": "L'",
+          "count": 140,
+          "calls": 47,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L'",
+          "move": "U'",
+          "count": 141,
+          "calls": 47,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U'",
+          "move": "L",
+          "count": 142,
+          "calls": 48,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L",
+          "move": "U",
+          "count": 143,
+          "calls": 48,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U",
+          "move": "L'",
+          "count": 144,
+          "calls": 48,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L'",
+          "move": "U'",
+          "count": 145,
+          "calls": 48,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U'",
+          "move": "L",
+          "count": 146,
+          "calls": 49,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L",
+          "move": "U",
+          "count": 147,
+          "calls": 49,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U",
+          "move": "L'",
+          "count": 148,
+          "calls": 49,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L'",
+          "move": "U'",
+          "count": 149,
+          "calls": 49,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U'",
+          "move": "U'",
+          "count": 150,
+          "calls": 50,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U'",
+          "move": "R'",
+          "count": 151,
+          "calls": 51,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R'",
+          "move": "U'",
+          "count": 152,
+          "calls": 51,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U'",
+          "move": "R",
+          "count": 153,
+          "calls": 51,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R",
+          "move": "U",
+          "count": 154,
+          "calls": 51,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U",
+          "move": "R",
+          "count": 155,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R",
+          "move": "U'",
+          "count": 156,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U'",
+          "move": "R'",
+          "count": 157,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R'",
+          "move": "U'",
+          "count": 158,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U'",
+          "move": "F'",
+          "count": 159,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F'",
+          "move": "U",
+          "count": 160,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U",
+          "move": "F",
+          "count": 161,
+          "calls": 52,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F",
+          "move": "F'",
+          "count": 162,
+          "calls": 53,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F F'",
+          "move": "U'",
+          "count": 163,
+          "calls": 53,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F F' U'",
+          "move": "F",
+          "count": 164,
+          "calls": 53,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F F' U' F",
+          "move": "U",
+          "count": 165,
+          "calls": 53,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F F' U' F U",
+          "move": "R",
+          "count": 166,
+          "calls": 53,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F F' U' F U R",
+          "move": "U",
+          "count": 167,
+          "calls": 53,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D D2 U' F2 F2 U U F2 F2 U' R' F R L F' L' L F L' F' L F F' L' F L' B L L' B' L L B' L' L B L' U2 B2 U2 L' B L D D' L' B' L U2 U2 B L B' B L' B' U2 U2 L' B L L' B' L U2 U2 B' L B B' L' B U2 U2 B L' B' B L B' U2 U2 B' L' B B' L B U2 F F' L L' B B' U2 L F U L2 L U2 R' F R U2 L' L U L' U' U2 R U R' U' R U R' U' R U R' U' U L' U' L U L' U' L U L' U' L U L U L' U' L U L' U' L U L' U' U' R' U' R U R U' R' U' F' U F F' U' F U R U",
+          "move": "R'",
+          "count": 168,
+          "calls": 53,
+          "solved": false
+        }
+      ],
+      "solves": [],
+      "calls": 53
+    },
+    {
+      "label": "GPT-5.6 Sol",
+      "effort": "max",
+      "color": "#ffbd69",
+      "path": "runs/20260905T044936Z_codex_f2l_full_cube/003_full_solve_gpt_5_6_sol_max",
+      "pending": false,
+      "steps": [
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 1,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "U",
+          "count": 1,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 3,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "U",
+          "count": 1,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U",
+          "move": "R2",
+          "count": 2,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2",
+          "move": "B",
+          "count": 3,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B",
+          "move": "U",
+          "count": 4,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U",
+          "move": "F'",
+          "count": 5,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F'",
+          "move": "D2",
+          "count": 6,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2",
+          "move": "L",
+          "count": 7,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L",
+          "move": "B'",
+          "count": 8,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B'",
+          "move": "D",
+          "count": 9,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D",
+          "move": "B",
+          "count": 10,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B",
+          "move": "R'",
+          "count": 11,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R'",
+          "move": "F'",
+          "count": 12,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F'",
+          "move": "L2",
+          "count": 13,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2",
+          "move": "U",
+          "count": 14,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U",
+          "move": "D",
+          "count": 15,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D",
+          "move": "R2",
+          "count": 16,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2",
+          "move": "B2",
+          "count": 17,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2",
+          "move": "U",
+          "count": 18,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U",
+          "move": "R2",
+          "count": 19,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U R2",
+          "move": "D'",
+          "count": 20,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U R2 D'",
+          "move": "F2",
+          "count": 21,
+          "calls": 4,
+          "solved": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 5,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "D",
+          "count": 1,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D",
+          "move": "F2",
+          "count": 2,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2",
+          "move": "U'",
+          "count": 3,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U'",
+          "move": "B2",
+          "count": 4,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2",
+          "move": "D",
+          "count": 5,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D",
+          "move": "F2",
+          "count": 6,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2",
+          "move": "L2",
+          "count": 7,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2",
+          "move": "R2",
+          "count": 8,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2",
+          "move": "U",
+          "count": 9,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U",
+          "move": "F",
+          "count": 10,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F",
+          "move": "L2",
+          "count": 11,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2",
+          "move": "U2",
+          "count": 12,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2",
+          "move": "F'",
+          "count": 13,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F'",
+          "move": "R'",
+          "count": 14,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R'",
+          "move": "D",
+          "count": 15,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R' D",
+          "move": "L",
+          "count": 16,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R' D L",
+          "move": "B",
+          "count": 17,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R' D L B",
+          "move": "D",
+          "count": 18,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R' D L B D",
+          "move": "L2",
+          "count": 19,
+          "calls": 6,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R' D L B D L2",
+          "move": "U'",
+          "count": 20,
+          "calls": 6,
+          "solved": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 7,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "D'",
+          "count": 1,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D'",
+          "move": "U'",
+          "count": 2,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U'",
+          "move": "B",
+          "count": 3,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B",
+          "move": "D2",
+          "count": 4,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2",
+          "move": "R'",
+          "count": 5,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R'",
+          "move": "L",
+          "count": 6,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L",
+          "move": "B",
+          "count": 7,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B",
+          "move": "L'",
+          "count": 8,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L'",
+          "move": "U2",
+          "count": 9,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2",
+          "move": "L2",
+          "count": 10,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2",
+          "move": "B'",
+          "count": 11,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B'",
+          "move": "L",
+          "count": 12,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L",
+          "move": "D",
+          "count": 13,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L D",
+          "move": "F2",
+          "count": 14,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L D F2",
+          "move": "L2",
+          "count": 15,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L D F2 L2",
+          "move": "B2",
+          "count": 16,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L D F2 L2 B2",
+          "move": "L'",
+          "count": 17,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L D F2 L2 B2 L'",
+          "move": "F2",
+          "count": 18,
+          "calls": 8,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F D' U' B D2 R' L B L' U2 L2 B' L D F2 L2 B2 L' F2",
+          "move": "R'",
+          "count": 19,
+          "calls": 8,
+          "solved": true
+        }
+      ],
+      "solves": [
+        {
+          "calls": 4,
+          "moves": 21,
+          "sequence": "U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U R2 D' F2",
+          "step": 23
+        },
+        {
+          "calls": 6,
+          "moves": 20,
+          "sequence": "D F2 U' B2 D F2 L2 R2 U F L2 U2 F' R' D L B D L2 U'",
+          "step": 44
+        },
+        {
+          "calls": 8,
+          "moves": 19,
+          "sequence": "D' U' B D2 R' L B L' U2 L2 B' L D F2 L2 B2 L' F2 R'",
+          "step": 64
+        }
+      ],
+      "calls": 8
+    },
+    {
+      "label": "GPT-6 Astra",
+      "effort": "max",
+      "color": "#bd9dff",
+      "path": "runs/20260905T044936Z_codex_f2l_full_cube/004_full_solve_gpt_6_astra_max",
+      "pending": false,
+      "steps": [
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 1,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "U",
+          "count": 1,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U",
+          "move": "R",
+          "count": 2,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R",
+          "move": "F",
+          "count": 3,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R F",
+          "move": "D",
+          "count": 4,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R F D",
+          "move": "L",
+          "count": 5,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R F D L",
+          "move": "B",
+          "count": 6,
+          "calls": 2,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 3,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "U",
+          "count": 1,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U",
+          "move": "R2",
+          "count": 2,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2",
+          "move": "B",
+          "count": 3,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B",
+          "move": "U",
+          "count": 4,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U",
+          "move": "F'",
+          "count": 5,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F'",
+          "move": "D2",
+          "count": 6,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2",
+          "move": "L",
+          "count": 7,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L",
+          "move": "B'",
+          "count": 8,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B'",
+          "move": "D",
+          "count": 9,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D",
+          "move": "B",
+          "count": 10,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B",
+          "move": "R'",
+          "count": 11,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R'",
+          "move": "F'",
+          "count": 12,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F'",
+          "move": "L2",
+          "count": 13,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2",
+          "move": "U",
+          "count": 14,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U",
+          "move": "D",
+          "count": 15,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D",
+          "move": "R2",
+          "count": 16,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2",
+          "move": "B2",
+          "count": 17,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2",
+          "move": "U",
+          "count": 18,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U",
+          "move": "R2",
+          "count": 19,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U R2",
+          "move": "D'",
+          "count": 20,
+          "calls": 4,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U R2 D'",
+          "move": "F2",
+          "count": 21,
+          "calls": 4,
+          "solved": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "",
+          "count": 0,
+          "calls": 6,
+          "reset": true
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+          "move": "R",
+          "count": 1,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R",
+          "move": "F",
+          "count": 2,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F",
+          "move": "R2",
+          "count": 3,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2",
+          "move": "U2",
+          "count": 4,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2",
+          "move": "L",
+          "count": 5,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L",
+          "move": "B'",
+          "count": 6,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B'",
+          "move": "U",
+          "count": 7,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U",
+          "move": "F'",
+          "count": 8,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F'",
+          "move": "D2",
+          "count": 9,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2",
+          "move": "F2",
+          "count": 10,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2",
+          "move": "B'",
+          "count": 11,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B'",
+          "move": "R",
+          "count": 12,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R",
+          "move": "U2",
+          "count": 13,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R U2",
+          "move": "R",
+          "count": 14,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R U2 R",
+          "move": "U'",
+          "count": 15,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R U2 R U'",
+          "move": "R2",
+          "count": 16,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R U2 R U' R2",
+          "move": "U",
+          "count": 17,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R U2 R U' R2 U",
+          "move": "L2",
+          "count": 18,
+          "calls": 7,
+          "solved": false
+        },
+        {
+          "setup": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F R F R2 U2 L B' U F' D2 F2 B' R U2 R U' R2 U L2",
+          "move": "U",
+          "count": 19,
+          "calls": 7,
+          "solved": true
+        }
+      ],
+      "solves": [
+        {
+          "calls": 4,
+          "moves": 21,
+          "sequence": "U R2 B U F' D2 L B' D B R' F' L2 U D R2 B2 U R2 D' F2",
+          "step": 28
+        },
+        {
+          "calls": 7,
+          "moves": 19,
+          "sequence": "R F R2 U2 L B' U F' D2 F2 B' R U2 R U' R2 U L2 U",
+          "step": 48
+        }
+      ],
+      "calls": 9
+    }
+  ]
+}

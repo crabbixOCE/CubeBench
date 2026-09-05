@@ -134,6 +134,21 @@ def _build_openai_input(
     return input_items
 
 
+def _context_management(config: HarnessConfig) -> dict[str, list[dict[str, object]]]:
+    threshold = config.openai.compact_threshold
+    if threshold is None:
+        return {}
+
+    return {
+        "context_management": [
+            {
+                "type": "compaction",
+                "compact_threshold": threshold,
+            }
+        ]
+    }
+
+
 def run_openai(
     config: HarnessConfig,
     tooldefs: list[ToolDefinition],
@@ -148,6 +163,7 @@ def run_openai(
     final_submission_prompt = build_final_submission_tool_prompt()
     terse_continuation_prompt = build_openai_terse_continuation_prompt()
     tool_required_prompt = build_tool_required_prompt()
+    context_management = _context_management(config)
     blank_response_streak = 0
 
     response = client.responses.create(
@@ -160,6 +176,7 @@ def run_openai(
             "summary": config.openai.reasoning_summary,
         },
         max_output_tokens=config.max_output_tokens,
+        **context_management,
     )
 
     turn = 1
@@ -213,6 +230,7 @@ def run_openai(
                 tools=tools,
                 reasoning=follow_up_reasoning,
                 max_output_tokens=config.max_output_tokens,
+                **context_management,
             )
             total_output_tokens += _output_tokens(response)
             logger.log_verbose_event(f"openai continuation turn {turn}", _response_summary(response))
@@ -240,6 +258,7 @@ def run_openai(
                 tools=tools,
                 reasoning={"effort": "low", "summary": config.openai.reasoning_summary},
                 max_output_tokens=config.max_output_tokens,
+                **context_management,
             )
             total_output_tokens += _output_tokens(response)
             logger.log_verbose_event("openai final submission request", _response_summary(response))
@@ -274,6 +293,7 @@ def run_openai(
                 "summary": config.openai.reasoning_summary,
             },
             max_output_tokens=config.max_output_tokens,
+            **context_management,
         )
         total_output_tokens += _output_tokens(response)
         logger.log_verbose_event(f"openai response turn {turn}", _response_summary(response))
@@ -287,6 +307,7 @@ def run_openai(
         tools=tools,
         reasoning={"effort": "low", "summary": config.openai.reasoning_summary},
         max_output_tokens=config.max_output_tokens,
+        **context_management,
     )
     total_output_tokens += _output_tokens(response)
     logger.log_verbose_event("openai final submission request", _response_summary(response))

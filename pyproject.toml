@@ -16,6 +16,7 @@ dependencies = [
 [project.scripts]
 cubebench-harness = "cubebench_harness.cli:main"
 cubebench-plot-results = "cubebench_harness.plot_results:main"
+cubebench-mcp = "cubebench_harness.mcp_server:main"
 
 [build-system]
 requires = ["hatchling"]

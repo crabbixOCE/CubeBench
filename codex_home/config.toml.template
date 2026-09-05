@@ -1,0 +1,89 @@
+# CubeBench Codex profile. This template is rendered into an external
+# CODEX_HOME by the Codex launchers; no credentials are stored here.
+# The launcher also pins the read-only sandbox on every invocation; this file
+# pins noninteractive approval behavior.
+model = "__CUBEBENCH_MODEL__"
+model_reasoning_effort = "__CUBEBENCH_REASONING_EFFORT__"
+model_reasoning_summary = "detailed"
+hide_agent_reasoning = false
+show_raw_agent_reasoning = true
+model_auto_compact_token_limit = __CUBEBENCH_COMPACT_THRESHOLD__
+model_auto_compact_token_limit_scope = "total"
+approval_policy = "never"
+sandbox_mode = "read-only"
+web_search = "disabled"
+history.persistence = "none"
+agents.enabled = false
+
+[features]
+apps = false
+browser_use = false
+browser_use_external = false
+browser_use_full_cdp_access = false
+code_mode.enabled = false
+code_mode_host = false
+code_mode_only = false
+code_mode_prewarm = false
+context_management.experimental_mode = false
+computer_use = false
+goals = false
+hooks = false
+in_app_browser = false
+image_generation = false
+memories = false
+multi_agent = false
+network_proxy = false
+plugins = false
+remote_plugin = false
+shell_snapshot = false
+shell_tool = false
+skill_search = false
+sleep_tool = false
+skill_mcp_dependency_install = false
+unified_exec = false
+view_image = false
+
+[mcp_servers.cubebench]
+enabled = true
+required = true
+command = "__CUBEBENCH_PYTHON__"
+args = [
+  "-m",
+  "cubebench_harness.mcp_server",
+  "--task",
+  "__CUBEBENCH_TASK__",
+  "--scramble-name",
+  "__CUBEBENCH_SCRAMBLE_NAME__",
+  "--scramble",
+  "__CUBEBENCH_SCRAMBLE__",
+  "--cube",
+  "__CUBEBENCH_CUBE__",
+  "--representation",
+  "__CUBEBENCH_REPRESENTATION__",
+  "--repo-root",
+  "__CUBEBENCH_REPO_ROOT__",
+]
+cwd = "__CUBEBENCH_REPO_ROOT__"
+env = { PYTHONPATH = "__CUBEBENCH_PYTHONPATH__" }
+enabled_tools = [
+  "load_scramble",
+  "apply_moves",
+  "check_task_complete",
+  "make_final_submission",
+]
+disabled_tools = []
+default_tools_approval_mode = "approve"
+startup_timeout_sec = 10
+tool_timeout_sec = 120
+
+[mcp_servers.cubebench.tools.load_scramble]
+approval_mode = "approve"
+
+[mcp_servers.cubebench.tools.apply_moves]
+approval_mode = "approve"
+
+[mcp_servers.cubebench.tools.check_task_complete]
+approval_mode = "approve"
+
+[mcp_servers.cubebench.tools.make_final_submission]
+approval_mode = "approve"

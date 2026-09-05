@@ -42,7 +42,9 @@ def build_common_tooldefs() -> list[ToolDefinition]:
             description=(
                 "Check whether the current cube satisfies a benchmark task. "
                 "Use this to verify correctness of a candidate sequence before deciding whether to keep searching for a shorter one. "
-                "Tasks are colour-neutral, so any whole-cube orientation may satisfy them. "
+                "cross, one_face, one_layer, and f2l are colour-neutral, so any whole-cube orientation may satisfy them. "
+                "white_cross is literal: white is the U face and whole-cube rotations do not make another face count. "
+                "white_cross requires the UR, UF, UL, and UB edge slots to contain their matching edge cubies in solved orientation. "
                 "cross requires some face to have a solved cross matched to its side centers. "
                 "one_face requires some face to be a solid 3x3 face. "
                 "one_layer requires some 3x3x1 layer to be fully solved. "
@@ -54,7 +56,7 @@ def build_common_tooldefs() -> list[ToolDefinition]:
                 "properties": {
                     "task": {
                         "type": "string",
-                        "enum": ["cross", "one_face", "one_layer", "f2l", "full_solve"],
+                        "enum": ["white_cross", "cross", "one_face", "one_layer", "f2l", "full_solve"],
                         "description": "The benchmark task id to validate.",
                     }
                 },

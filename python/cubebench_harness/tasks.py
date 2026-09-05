@@ -13,6 +13,19 @@ class TaskDefinition:
 
 
 TASK_DEFINITIONS: dict[str, TaskDefinition] = {
+    "white_cross": TaskDefinition(
+        id="white_cross",
+        label="White Cross",
+        objective="Solve the white cross only.",
+        success_criteria=(
+            "Interpret white literally from the representation contract, so white is the U face.",
+            "The UR, UF, UL, and UB edge slots must each contain their matching edge cubie in solved orientation.",
+            "The rest of the cube may remain unsolved.",
+        ),
+        final_response_format=(
+            "Return only the move sequence that reaches a state satisfying the white_cross task."
+        ),
+    ),
     "cross": TaskDefinition(
         id="cross",
         label="Cross",

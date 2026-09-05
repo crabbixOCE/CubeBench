@@ -1,0 +1,13 @@
+cube: 3x3
+representation: cubie_json
+tasks:
+  - white_cross
+model_names:
+  - gpt-6-astra-max
+n_runs_per_task: 1
+max_turns: 50
+max_output_tokens: 100000
+
+openai:
+  reasoning_summary: detailed
+  compact_threshold: 175000

@@ -1,0 +1,21 @@
+# Bounded, deterministic Codex comparison batch. All model entries use the
+# same fixed one-layer scramble. gpt-5.4 is retained as an explicit request
+# but is skipped by the launcher because it is retired from the live catalog;
+# gpt-5.5 uses xhigh because max is not supported by that model.
+cube: 3x3
+representation: cubie_json
+tasks:
+  - one_layer
+model_names:
+  - gpt-5.4-max
+  - gpt-5.5-xhigh
+  - gpt-5.6-sol-max
+  - gpt-6-astra-max
+n_runs_per_task: 1
+scramble_name: one_layer_01
+scramble: "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F"
+max_turns: 50
+max_output_tokens: 100000
+openai:
+  reasoning_summary: detailed
+  compact_threshold: 175000

@@ -31,6 +31,26 @@ class RunnerSubmissionTests(unittest.TestCase):
         self.assertEqual(verification.extracted_solution, "R'")
         self.assertTrue(verification.task_completion["task_completed"])
 
+    def test_verify_submitted_solution_accepts_wide_notation(self) -> None:
+        config = HarnessConfig(
+            provider="openai",
+            model_name="gpt-test",
+            cube="3x3",
+            representation="cubie_json",
+            scramble_name="wide-demo",
+            scramble="r",
+            task="full_solve",
+        )
+
+        verification = _verify_submitted_solution(
+            self.repo_root,
+            config,
+            "Rw'",
+        )
+
+        self.assertEqual(verification.extracted_solution, "Rw'")
+        self.assertTrue(verification.task_completion["task_completed"])
+
     def test_verify_submitted_solution_rejects_missing_submission(self) -> None:
         config = HarnessConfig(
             provider="google",

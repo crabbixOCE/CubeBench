@@ -1,0 +1,17 @@
+CubeBench replay metadata (adapted from Codex trace)
+
+config
+------
+{
+  "provider": "openai",
+  "model_name": "gpt-6-astra",
+  "scramble": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+  "task": "full_solve"
+}
+
+configured scramble
+-------------------
+{
+  "scramble": "B U F B D F R L' F D2 F2 L' D2 F2 B2 R U2 L2 D2 L2 F",
+  "scramble_name": "one_layer_01"
+}

@@ -8,7 +8,7 @@ import yaml
 
 from .tasks import get_task_definition
 
-OPENAI_REASONING_EFFORTS = {"minimal", "low", "medium", "high", "xhigh"}
+OPENAI_REASONING_EFFORTS = {"minimal", "low", "medium", "high", "xhigh", "max"}
 GOOGLE_THINKING_LEVELS = {"low", "medium", "high"}
 KNOWN_PROVIDERS = {"anthropic", "google", "openai"}
 
@@ -122,6 +122,7 @@ class PlannedRun:
 class OpenAIConfig:
     reasoning_effort: str = "medium"
     reasoning_summary: str = "detailed"
+    compact_threshold: int | None = None
 
 
 @dataclass(slots=True)
@@ -204,9 +205,9 @@ class HarnessBatchConfig:
         scramble = raw.get("scramble")
         if (scramble_name is None) != (scramble is None):
             raise ValueError("Legacy scramble overrides require both 'scramble_name' and 'scramble'.")
-        if scramble is not None and (len(tasks) != 1 or n_runs_per_task != 1):
+        if scramble is not None and n_runs_per_task != 1:
             raise ValueError(
-                "Legacy scramble overrides are only supported for a single task with n_runs_per_task=1."
+                "Fixed scramble overrides require n_runs_per_task=1 for every task."
             )
 
         return cls(
@@ -248,7 +249,6 @@ class HarnessBatchConfig:
                 if (
                     self.scramble_name is not None
                     and self.scramble is not None
-                    and task == self.tasks[0]
                     and task_run_index == 1
                 ):
                     scramble_name = self.scramble_name
@@ -304,7 +304,7 @@ class HarnessBatchConfig:
         if self.scramble is None or self.scramble_name is None:
             raise ValueError("This config does not define legacy fixed scrambles.")
 
-        return {self.tasks[0]: [self.scramble]}
+        return {task: [self.scramble] for task in self.tasks}
 
 
 def _slug_fragment(value: str) -> str:

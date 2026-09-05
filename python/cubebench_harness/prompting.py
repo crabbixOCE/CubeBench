@@ -39,12 +39,17 @@ def build_openai_terse_continuation_prompt() -> str:
 def build_system_prompt(config: HarnessConfig, representation_contract: str) -> str:
     task_definition = get_task_definition(config.task)
     task_lines = "\n".join(f"- {line}" for line in task_definition.success_criteria)
+    orientation_guidance = (
+        "The white_cross task is literal: white is the U face, and whole-cube rotations do not make another face count.\n"
+        if task_definition.id == "white_cross"
+        else "Benchmark tasks are colour-neutral: any whole-cube orientation that satisfies the task counts.\n"
+    )
     return (
         "You are solving a Rubik's Cube through tools.\n"
         "Use tools instead of guessing the cube state.\n"
         "Interpret all cube states strictly according to the representation contract below.\n"
         "Do not invent a different color scheme, face mapping, or index ordering.\n"
-        "Benchmark tasks are colour-neutral: any whole-cube orientation that satisfies the task counts.\n"
+        f"{orientation_guidance}"
         "Always call load_scramble() before attempting to solve.\n"
         "Use the state returned by load_scramble() and apply_moves(); there is no separate state-inspection tool.\n"
         "Minimize the move count using WCA standard outer block turn metric: each outer face turn such as U, R2, or F' counts as 1 move.\n"

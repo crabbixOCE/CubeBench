@@ -71,6 +71,7 @@ class OpenAIUsageTests(unittest.TestCase):
             task="cross",
         )
         config.max_turns = 1
+        config.openai.compact_threshold = 175000
 
         first_response = SimpleNamespace(
             id="resp-1",
@@ -148,6 +149,11 @@ class OpenAIUsageTests(unittest.TestCase):
 
         self.assertEqual(result.final_text, "R'")
         self.assertEqual(len(calls), 2)
+        for call in calls:
+            self.assertEqual(
+                call["context_management"],
+                [{"type": "compaction", "compact_threshold": 175000}],
+            )
         self.assertEqual(calls[1]["previous_response_id"], "resp-1")
         self.assertEqual(calls[1]["input"][0]["type"], "function_call_output")
         self.assertEqual(calls[1]["input"][0]["call_id"], "call-1")

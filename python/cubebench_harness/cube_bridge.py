@@ -64,11 +64,18 @@ class CubeJsBridge:
         )
 
     def _run(self, payload: dict[str, Any]) -> dict[str, Any]:
-        completed = subprocess.run(
-            ["node", str(self.script_path), json.dumps(payload)],
-            cwd=self.repo_root,
-            capture_output=True,
-            check=True,
-            text=True,
-        )
+        try:
+            completed = subprocess.run(
+                ["node", str(self.script_path), json.dumps(payload)],
+                cwd=self.repo_root,
+                capture_output=True,
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as exc:
+            detail = (exc.stderr or exc.stdout or "").strip()
+            if detail:
+                raise ValueError(f"Cube bridge rejected input: {detail}") from exc
+            raise ValueError(f"Cube bridge failed with exit code {exc.returncode}.") from exc
+
         return json.loads(completed.stdout)
